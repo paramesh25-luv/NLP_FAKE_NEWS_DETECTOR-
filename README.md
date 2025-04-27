@@ -84,5 +84,3 @@ The project follows these stages:
 - Integrate BERT for contextual embeddings.
 - Expand preserved terms (e.g., "WHO," "UNICEF").
 - Deploy on cloud platforms (AWS/Azure) for scalability.
-
----
