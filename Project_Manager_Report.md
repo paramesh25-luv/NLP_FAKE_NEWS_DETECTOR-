@@ -73,10 +73,3 @@
 - **Team**: 100% tasks logged in Trello  
 
 ---
-
-## ▶️ Next Steps
-1. Clone repo: `git clone [your-repo-link]`  
-2. Data Engineer: Upload datasets to `/data/raw`  
-3. ML Engineer: Start `model_training.ipynb` in Colab  
-4. Full-Stack Dev: Draft `app.py` with Streamlit  
-5. Project Manager: Schedule kickoff meeting (Agenda: [here](https://docs.google.com/))  
