@@ -38,7 +38,7 @@ The project follows these stages:
    - **Threshold Tuning**: Adjust prediction confidence thresholds (e.g., ≥0.6 for "REAL").
 
 ### 5. **Deployment**
-   - **Streamlit UI**: 
+   - **Gradio UI**: 
      - Users input news text.
      - The system displays predictions with confidence scores.
    - **Google Colab + ngrok**: 
