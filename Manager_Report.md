@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 **Goal**: Build an NLP tool to classify news as "real" or "fake" using an LSTM model with Streamlit UI.  
 **Key Changes from Original Plan**:
-- **UI**: Streamlit replaces Flask for faster deployment in Google Colab.
+- **UI**: Gradio replaces Flask for faster deployment in Google Colab.
 - **Model**: Prioritize LSTM over BERT for resource efficiency.
 - **Deployment**: Use Google Colab + ngrok for demo (no Docker needed).
 
@@ -14,9 +14,9 @@
 | Role                | Key Tasks                                                                 | Tools/Skills               |
 |---------------------|--------------------------------------------------------------------------|----------------------------|
 | **Data Engineer**   | Clean datasets, handle text preprocessing, manage Google Drive pipelines | Python, Pandas, NLTK       |
-| **ML Engineer**     | Train/evaluate LSTM model, optimize thresholds, track metrics            | TensorFlow, Scikit-learn    |
-| **Full-Stack Dev**  | Build Streamlit UI, integrate ngrok for Colab deployment                 | Streamlit, ngrok           |
-| **Project Manager** | Track deadlines, document progress, resolve blockers                    | Trello, Git, Google Docs   |
+| **ML Engineer**     | Train/evaluate LSTM model, optimize thresholds, track metrics            | TensorFlow, Scikit-learn   |
+| **Full-Stack Dev**  | Build Streamlit UI, integrate ngrok for Colab deployment                 | Gradio, ngrok              |
+| **Project Manager** | Track deadlines, document progress, resolve blockers                    | Trello, Git, Google Docs    |
 
 ---
 
@@ -30,7 +30,7 @@
 |---------------------|----------------------------------------------------------------------|
 | Data Engineer       | - Download datasets from Kaggle <br> - Run `data_cleaning.py`        |
 | ML Engineer         | - Set up Colab notebook <br> - Research LSTM hyperparameters         |
-| Full-Stack Dev      | - Initialize GitHub repo <br> - Draft Streamlit UI wireframe         |
+| Full-Stack Dev      | - Initialize GitHub repo <br> - Draft Gradio UI wireframe            |
 | Project Manager     | - Create Trello board <br> - Schedule daily standups (15 mins)       |
 
 ### **Phase 2: Model Training (Week 3-4)**
@@ -38,7 +38,7 @@
 |---------------------|----------------------------------------------------------------------|
 | ML Engineer         | - Train LSTM model <br> - Share accuracy/F1 scores                   |
 | Data Engineer       | - Generate padded sequences <br> - Handle class imbalance            |
-| Full-Stack Dev      | - Build prediction API in Streamlit                                  |
+| Full-Stack Dev      | - Build prediction API in Gradio                                     |
 | Project Manager     | - Document metrics in Google Sheets <br> - Resolve GPU access issues |
 
 ### **Phase 3: Deployment & Testing (Week 5-6)**
@@ -46,7 +46,7 @@
 |---------------------|----------------------------------------------------------------------|
 | Full-Stack Dev      | - Deploy UI via ngrok <br> - Add heuristic overrides (e.g., "CERN")  |
 | ML Engineer         | - Optimize decision threshold <br> - Create test cases               |
-| Project Manager     | - User testing <br> - Finalize documentation                        |
+| Project Manager     | - User testing <br> - Finalize documentation                         |
 
 ---
 
@@ -63,7 +63,7 @@
 |-------------------------------|-------------------------------------------|
 | Low LSTM accuracy             | Add data augmentation for "REAL" samples  |
 | Colab disconnections          | Save checkpoints hourly to Google Drive   |
-| UI latency                    | Cache tokenizer/model in Streamlit       |
+| UI latency                    | Cache tokenizer/model in Gradio           |
 
 ---
 
